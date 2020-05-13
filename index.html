@@ -22,14 +22,22 @@
     .box {
       width: 200px;
       height: 200px;
+      position: relative;
     }
-    #one {
+    .box::after {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+    #one::after  {
      background-image: url(/bnjmnm/sprite.svg#left-arrow);
     }
-    #two {
+    #two::after  {
      background-image: url(/bnjmnm/sprite.svg#lightning-bolt);
     }
-    #three {
+    #three::after  {
      background-image: url(/bnjmnm/sprite.svg#heart);
     }
   </style>

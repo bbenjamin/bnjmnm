@@ -5,6 +5,7 @@
 <head>
   <meta charset="utf-8">
   <title>SVG Sprite Map Example</title>
+  <!--<link rel="stylesheet" media="all" href="/bnjmnm/style.css">-->
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style type="text/css">
@@ -17,6 +18,19 @@
     }
     svg {
       display: block;
+    }
+    .box {
+      width: 200px;
+      height: 200px;
+    }
+    #one {
+     background-image: url(/bnjmnm/sprite.svg#left-arrow);
+    }
+    #two {
+     background-image: url(/bnjmnm/sprite.svg#lightning-bolt);
+    }
+    #three {
+     background-image: url(/bnjmnm/sprite.svg#heart);
     }
   </style>
 </head>
@@ -42,6 +56,10 @@
     </svg>
     Three
   </a>
+    <div class="box" id="one"></div>
+  <div class="box" id="two"></div>
+  <div class="box" id="three"></div>
+
 </body>
 
 </html>
